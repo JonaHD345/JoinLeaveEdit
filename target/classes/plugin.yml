@@ -1,0 +1,7 @@
+name: JoinLeaveEdit
+version: 1.1
+main: de.jonahd345.joinleaveedit.JoinLeaveEdit
+api-version: 1.13
+author: JonaHD345
+
+softdepend: [PlaceholderAPI]
