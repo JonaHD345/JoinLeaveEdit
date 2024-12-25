@@ -15,7 +15,9 @@ public class ConnectionListener implements Listener {
     public void onJoin(PlayerJoinEvent e) {
         Player player = e.getPlayer();
         String message = JoinLeaveEdit.getInstance().getConfig().getString("Config.Join");
-        message = PlaceholderAPI.setPlaceholders(player, message);
+        if (JoinLeaveEdit.getInstance().isPlaceholderAPIEnabled()) {
+            message = PlaceholderAPI.setPlaceholders(player, message);
+        }
         e.setJoinMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
 
@@ -23,7 +25,9 @@ public class ConnectionListener implements Listener {
     public void onQuit(PlayerQuitEvent e) {
         Player player = e.getPlayer();
         String message = JoinLeaveEdit.getInstance().getConfig().getString("Config.Leave");
-        message = PlaceholderAPI.setPlaceholders(e.getPlayer(), message);
+        if (JoinLeaveEdit.getInstance().isPlaceholderAPIEnabled()) {
+            message = PlaceholderAPI.setPlaceholders(player, message);
+        }
         e.setQuitMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
 }
