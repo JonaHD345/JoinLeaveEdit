@@ -1,9 +1,7 @@
 package de.jonahd345.joinleaveedit;
 
-import de.jonahd345.joinleaveedit.listener.JoinListener;
-import de.jonahd345.joinleaveedit.listener.QuitListener;
-import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
+import de.jonahd345.joinleaveedit.listener.ConnectionListener;
+import lombok.Getter;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -24,8 +22,7 @@ public final class JoinLeaveEdit extends JavaPlugin {
 
     private void init() {
         PluginManager pluginManager = this.getServer().getPluginManager();
-        pluginManager.registerEvents(new JoinListener(), this);
-        pluginManager.registerEvents(new QuitListener(), this);
+        pluginManager.registerEvents(new ConnectionListener(), this);
     }
 
     public static JoinLeaveEdit getInstance() {
