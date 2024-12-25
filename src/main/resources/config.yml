@@ -1,12 +1,9 @@
 # Config from JoinEditLeave
-# Made by JonaHD345
-# !!!WORKS ONLY WITH PLACEHODLERAPI!!!
+# Made by JonaHD345 (http://github.com/JonaHD345)
+# Support, bugs & ideas: discord: jonahd345 or contact@jonahd345.de
 # Support PlaceholderAPI
 # You can use '&' Colorcodes!
 
 Config:
   Join: ''
   Leave: ''
-
-
-# Bugs or Ideas please via Discord: JonaHD345#0827
