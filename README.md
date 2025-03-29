@@ -1,4 +1,7 @@
 # JoinLeaveEdit
-more info here:<br>
--> https://www.spigotmc.org/resources/joinleaveedit.100013/ <br><br>
+
+more info here:
+
+-> https://www.spigotmc.org/resources/joinleaveedit.100013/
+
 coded with ❤️ by JonaHD345
